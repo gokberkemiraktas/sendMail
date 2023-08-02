@@ -1,0 +1,2 @@
+# sendMail
+Send mail script
