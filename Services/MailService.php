@@ -15,16 +15,16 @@ class MailService
         try {
             $mail->SMTPDebug = SMTP::DEBUG_SERVER;
             $mail->isSMTP();
-            $mail->Host = 'servertr.fibuhosting.com';
+            $mail->Host = '';
             $mail->SMTPAuth = true;
-            $mail->Username = 'gokberk@otoname.com';
-            $mail->Password = '!Nv1?,e~bifD';
+            $mail->Username = '';
+            $mail->Password = '';
             $mail->SMTPSecure = PHPMailer::ENCRYPTION_SMTPS;
             $mail->Port = 465;
 
             //Recipients
-            $mail->setFrom('gokberk@otoname.com', 'Gökberk');
-            $mail->addAddress("ghazale.f@yahoo.com", "Ghazale Fallah");
+            $mail->setFrom('', '');
+            $mail->addAddress("", "");
             $mail->isHTML(true);
             $mail->Subject = "Apply Form";
             $mail->Body = $mailData->getHtml();
